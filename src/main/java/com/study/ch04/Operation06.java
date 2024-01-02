@@ -22,5 +22,6 @@ public class Operation06 {
 
         System.out.println(name == name2);
         System.out.println(name == "김준일");
+        System.out.println(name == "김준일");
     }
 }
