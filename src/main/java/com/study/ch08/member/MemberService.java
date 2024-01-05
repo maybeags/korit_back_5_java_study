@@ -17,7 +17,7 @@ public class MemberService {
         return value;
     }
 
-    boolean addMember() {
+    boolean addMember(Member[] members) {
         Scanner scanner = new Scanner(System.in);
         String code = null;
         String name = null;
@@ -26,19 +26,19 @@ public class MemberService {
 
         System.out.println("<<< 회원 등록 >>>");
         code = inputValue("회원코드");
-        if("exit".equalsIgnoreCase(code)) {
+        if ("exit".equalsIgnoreCase(code)) {
             return false;
         }
         name = inputValue("이름");
-        if("exit".equalsIgnoreCase(name)) {
+        if ("exit".equalsIgnoreCase(name)) {
             return false;
         }
         age = inputValue("나이");
-        if("exit".equalsIgnoreCase(age)) {
+        if ("exit".equalsIgnoreCase(age)) {
             return false;
         }
         address = inputValue("주소");
-        if("exit".equalsIgnoreCase(address)) {
+        if ("exit".equalsIgnoreCase(address)) {
             return false;
         }
 
@@ -46,6 +46,6 @@ public class MemberService {
 
         MemberRepository memberRepository = new MemberRepository();
 
-        return memberRepository.insert(member) > 0;
+        return memberRepository.insert(members, member) > 0;
     }
 }
