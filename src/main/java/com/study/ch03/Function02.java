@@ -1,6 +1,8 @@
 package com.study.ch03;
 
-public class Function02 {
+public class
+
+Function02 {
 
     // 매개변수x, 리턴x
     public static void fx01(){
