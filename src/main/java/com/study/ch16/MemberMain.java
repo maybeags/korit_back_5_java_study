@@ -34,10 +34,14 @@ public class MemberMain {
                      << 등록이 완료되었습니다. >>
                  */
                 int i = 0;
+                String name;
+                String address;
                 System.out.println(" [ 회원 등록하기 ]");
                 System.out.println("이름 >> ");
+                name = scanner.nextLine();
                 System.out.println("주소 >> ");
-                members.add(new Member(scanner.nextLine(), scanner.nextLine()));
+                address = scanner.nextLine();
+                members.add(new Member(name, address));
                 System.out.println("<< 등록이 완료되었습니다. >>");
 
             } else if ("2".equals(selectedMenu)) {
