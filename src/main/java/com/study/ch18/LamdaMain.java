@@ -69,7 +69,7 @@ public class LamdaMain {
         System.out.println(newList);
 
         List<Integer> newList2 = newList.stream().map(num -> num * 2).collect(Collectors.toList());
-        System.out.println(newList2);
+        System.out.println(newList2 );
 
     }
 }
