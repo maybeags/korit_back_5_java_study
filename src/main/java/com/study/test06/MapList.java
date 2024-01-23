@@ -1,4 +1,4 @@
-package com.study;
+package com.study.test06;
 
 import java.util.*;
 

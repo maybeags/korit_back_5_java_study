@@ -1,4 +1,4 @@
-package com.study.formativeTest;
+package com.study.test01;
 
 public class Calculator {
     int add(int num1, int num2) {

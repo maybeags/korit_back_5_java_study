@@ -1,4 +1,4 @@
-package com.study.formativeTest;
+package com.study.test01;
 
 public class Main {
 
